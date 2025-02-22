@@ -1,1 +1,17 @@
-  
+model Package {
+  item_id              Int      @id @default(autoincrement())
+  name                 String
+  description          String?
+  price                Float
+  quantity             Int
+  item_type            String
+  weight               Float
+  image                String?
+  width_height         String?
+  order_status         String
+  delivery_fee         Float
+  pickup_date          DateTime
+  delivery_date        DateTime
+  create_date          DateTime @default(now())
+  receiver_contact_number String
+}  
